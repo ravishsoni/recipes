@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Recipes</string>
+
+    <string name="search_recipes">Search recipes</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="added_in_cart">Added In Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="my_account">My Account</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="cart">Shopping List</string>
+    <string name="meal_planning">Meal Planning</string>
+    <string name="user_profile">User Profile</string>
+    <string name="username">Username</string>
+    <string name="cuisine_type">Cuisine type</string>
+    <string name="dietary_restrictions">Dietary restrictions</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

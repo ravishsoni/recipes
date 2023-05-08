@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "284783952973",
+    "project_id": "recipes-42cc6",
+    "storage_bucket": "recipes-42cc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284783952973:android:48110e9e448f451beac804",
+        "android_client_info": {
+          "package_name": "com.sonitech.recipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284783952973-vdn9pnh02mmha4bl01nj2c9dmfdrdaph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sonitech.recipes",
+            "certificate_hash": "6ec0e30900658a2397311bfdc1e1cccb3176a04d"
+          }
+        },
+        {
+          "client_id": "284783952973-so6609f5r76tj7emlk70j1k4amlholpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByn0gwXbPtA4e7i-ToSHnZztj2fGWGUY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284783952973-so6609f5r76tj7emlk70j1k4amlholpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

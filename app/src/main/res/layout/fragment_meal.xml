@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/meal_planning"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cv_header" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_month" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/rv_date_time">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/breakfast"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/purple_500"
+                android:background="@drawable/background_color_stroke"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_time"
+                android:layout_marginTop="16dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/lunch"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/purple_500"
+                android:background="@drawable/background_color_stroke"
+                app:layout_constraintTop_toBottomOf="@+id/et_breakfast"
+                android:layout_marginTop="16dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/dinner"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/purple_500"
+                android:background="@drawable/background_color_stroke"
+                app:layout_constraintTop_toBottomOf="@+id/et_lunch"
+                android:layout_marginTop="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:text="@string/save"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_rect_theme"
+                app:layout_constraintTop_toBottomOf="@+id/et_dinner"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_update"
+                android:layout_width="0dp"
+                android:layout_margin="8dp"
+                android:text="@string/update"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/tv_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_rect_theme"
+                app:layout_constraintTop_toBottomOf="@+id/et_dinner"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_delete"
+                android:layout_width="0dp"
+                android:layout_margin="8dp"
+                android:text="@string/delete"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/tv_update"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_rect_theme"
+                app:layout_constraintTop_toBottomOf="@+id/et_dinner"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
